@@ -1,0 +1,36 @@
+/*
+
+Today's Topic: String Functions - TRIM, LTRIM, RTRIM, Replace,  Upper, Lower, /Substring,/
+
+*/
+
+
+CREATE TABLE assesment (
+assessmentID varchar(50) PRIMARY KEY AUTO_INCREMENT,
+assessment_name varchar(50),
+grade bit) --64 numeric number is enough for 12 grade
+
+
+INSERT INTO assesment (assessment_name, grade)
+VALUES ('Math ', '6,'),
+('Science', '8-'),  
+('Languange-English', '6')
+
+-- Using Trim, (LTRIM, RTRIM)
+
+Select assessmentID, TRIM(',- ' from assessmentID) AS IDTRIM
+FROM assessment 
+
+-- Using Replace
+
+Select assessment_name, REPLACE(assessment_name, '-English', '') as AssessmentnameFixed
+FROM assessment
+
+
+-- Using UPPER and lower
+
+Select assessment_name, LOWER(assessment_name)
+from Eassessment
+
+Select assessment_name, UPPER(assessment_name)
+from assessment
