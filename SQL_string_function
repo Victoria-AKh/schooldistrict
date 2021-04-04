@@ -18,7 +18,7 @@ VALUES ('Math ', '6,'),
 
 -- Using Trim, (LTRIM, RTRIM)
 
-Select assessmentID, TRIM(',- ' from assessmentID) AS IDTRIM
+Select grade, TRIM(',- ' from grade) AS IDTRIM
 FROM assessment 
 
 -- Using Replace
